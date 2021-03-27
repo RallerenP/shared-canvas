@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shared Canvas</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="module" src="/js/main.js"></script>
+    <script src="/js/util/settings.js"></script>
+    <script type="module" src="/js/util/canvas_extend.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="toolbar">
+            <div onclick="settings.col='#FFFFFF'" class="color white">
+
+            </div>
+            <div onclick="settings.col='#000000'" class="color black">
+
+            </div>
+            <div onclick="settings.col='#FF0000'" class="color red">
+
+            </div>
+            <div onclick="settings.col='#00FF00'" class="color green">
+
+            </div>
+            <div onclick="settings.col='#0000FF'" class="color blue">
+
+            </div>
+        </div>
+
+        <canvas id="draw-layer" width="1500" height="700"></canvas>
+        <canvas id="overlay-layer" width="1500" height="700"></canvas>
+    </div>
+
+    <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+</body>
+</html>
