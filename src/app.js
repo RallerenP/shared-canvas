@@ -42,5 +42,5 @@ app.get('/socket.io/socket.io.js', (req, res) => {
 
 http.listen(80, () => {
     console.clear();
-    console.log("Listening on port 3000...")
+    console.log("Listening on port 80...")
 })
