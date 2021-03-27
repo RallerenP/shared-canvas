@@ -40,7 +40,7 @@ app.get('/socket.io/socket.io.js', (req, res) => {
     res.sendFile(join(__dirname, '..', 'node_modules', 'socket.io', 'client-dist', 'socket.io.js'))
 })
 
-http.listen(3000, () => {
+http.listen(80, () => {
     console.clear();
     console.log("Listening on port 3000...")
 })
